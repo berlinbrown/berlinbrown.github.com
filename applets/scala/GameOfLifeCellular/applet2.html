@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Applet Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <script src="deployJava.js"></script>
+  </head>
+  <body>    
+    <h3>Basic Wolfram Cellular Automata Applet</h3>
+  
+    <p>
+    Conway's Game of Life cellular automaton is one of the most prominent examples of cellular automata theory. 
+    The one dimensional program consists of a cell grid typically with several dozen or more rows and similar 
+    number of columns. Each cell on the grid has an on or off Boolean state. Every cell on the grid survives or dies 
+    to the next generation depending on the game of life rules. If there are too many neighbors surrounding a 
+    cell then the cell dies due to overcrowding. If there is only one neighbor cell, 
+    the base cell dies due to under-population. Activity on a particular cell is not interesting 
+    but when you run the entire system for many generations, a group of patterns begin to form.
+    
+    <br /> <br />
+    
+    Stephan Wolfram is the founder of Wolfram|Research, his company is known for the popular Mathematica software suite 
+    and Wolfram|Alpha knowledge engine. He did not initially discover cellular automata but recently 
+    he has been a prominent figure in its advocacy. He spent 10 years working on his book, A New Kind of Science. 
+    In the 1300 page tome, he discusses how cellular automata can be applied to every field of science from biology to physics. 
+    NKA is a detailed study of cellular automata programs.
+    
+    <br /> <br />
+    
+    Cellular automata is often used with data compression, cryptography, artificial intelligence, urban planning, 
+    financial market modeling, music generation, and 3D terrain generation. If you are a software engineer, 
+    you may have to step back and consider how cellular automata patterns emerge and understand the nature of 
+    the dynamic system before looking for a typical software library. CA is not normally seen in everyday applications. 
+    Consider this when you look at some random pattern, don't think of the phenomenon as a random sequence of events that 
+    cannot be replicated, think of the event in terms of a cellular automaton. Try to imagine the rules that could 
+    model that natural behavior. Modeling seemingly random patterns is an area where cellular automata is being widely used. Urban planning departments are integrating geographic information systems (GIS) 
+    with cellular automata in an attempt to predict growth in an area of a city.    
+    </p>
+    
+    Example automata applet in Scala: -- Berlin Brown
+    <br />
+    <script>
+        var attributes = {
+        	    code:    'org.berlin.automata.AutomataApplet',
+        	    archive: 'scala-library.jar,scala-swing.jar,automatascala.jar',
+        	    width:1000, height:1000
+        	    };
+        var parameters = {  };
+        deployJava.runApplet(attributes, parameters, '1.6');
+    </script>
+  </body>
+</html>
