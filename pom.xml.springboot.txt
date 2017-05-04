@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+        <!--
+          **************************************************************************
+          Basic POM xml for web development, includes many libraries
+          Date: 5/4/2017
+          **************************************************************************
+         -->                     
+        <modelVersion>4.0.0</modelVersion>
+        <groupId>org.berlin</groupId>
+        <artifactId>botstore</artifactId>
+        <packaging>war</packaging>
+        <version>1.0.1</version>        
+        <name>Basic BotStore/PetStore, test webapp with many standard dependencies </name>
+        
+        <properties>
+                <org.springframework.version>4.3.8.RELEASE</org.springframework.version>                                
+        </properties>   
+        
+        <parent>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-parent</artifactId>
+            <version>1.5.3.RELEASE</version>
+        </parent>
+                
+        <dependencies>
+                <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-web</artifactId>
+         </dependency>   
+        </dependencies>
+          
+        <build>
+                <finalName>${project.artifactId}</finalName>            
+                <plugins>
+                         <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>                
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+                        <plugin>
+                                <artifactId>maven-war-plugin</artifactId>
+                                <configuration>
+                                        <outputFileNameMapping>@{artifactId}@.@{extension}@</outputFileNameMapping>
+                                        <archive>
+                                        </archive>
+                                        <webResources>
+                                                <resource>
+                                                        <directory>WebContent</directory>
+                                                </resource>
+                                        </webResources>
+                                </configuration>
+                        </plugin>
+                        <plugin>
+                 <groupId>org.apache.maven.plugins</groupId>
+                 <artifactId>maven-surefire-plugin</artifactId>
+                 <configuration>
+                                 <testFailureIgnore>true</testFailureIgnore>
+                 </configuration>
+                 </plugin>
+                </plugins>
+        </build>
+</project>
