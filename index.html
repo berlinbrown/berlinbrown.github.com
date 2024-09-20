@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>2024 - berlin brown github.io-v2, developer enterprise open source</title>
+  <title>For 2024 - berlin brown github.io-v2, developer enterprise open source</title>
   <meta name="Description" content="Berlin Brown Github - The Math Service mission is to provide robust math utilities using Google Appengine">
   <meta name="Keywords" content="google appengine, appengine, math,euler,berlin brown, berlin, ronpaul, paul, ron paul,C++,haskell, java, pi, literate programming, house md, science, astronomy, biology, chemistry, cognitive science, education, mathematics, clean code">
 
@@ -68,8 +68,10 @@ table tr td {
 	  <p>
 	  Specialties: Backend Java development, Frontend Hybrid development IBM Mobilefirst/Worklight, J2EE, 
 	  performance analysis, web application security, IBM Webshere, IBM DB2 with a focus on Financial Services 
-	  and Insurance.
+	  and Insurance.  With new focus on &#35;Atlanta, &#35;AI, &#35;LLM, &#35;Blockchain
 	  </p>
+
+	   <H2>Core Blog Links</H2>
 
 	 	<br />
 	
@@ -94,7 +96,7 @@ table tr td {
 		</div>
 	 	
 	 	<!-- Section descriptions projects -->
-	 	<h2>Open Projects</h2>
+	 	<h2>More Open Projects</h2>
 	 	<div>
 	 		<p>
 	 			<a href="https://github.com/berlinbrown/jvmnotebook">JVM Notebook</a> - Small projects demonstrating the features of various JVM languages including scala, jython, drools, antrl, abcl.	 			
@@ -144,11 +146,87 @@ table tr td {
         
         <section>               
             Published on <a href="https://pages.github.com/">Github Pages</a>                           
-        </section>	 		
+        </section>
+		
+		<h1>More Posts</h1>
+
+		<h2>On Cellular Automata</h2>
+
+		<a href="https://berlinbrowndev.blogspot.com/2013/02/wolframs-cellular-automata-new-kind-of.html">Cellular Automata</a>
+
+		<p>A New Kind of Science</p>
+
+		<p>
+		The name Stephan Wolfram has been mentioned several times in this post. He is the founder of Wolfram|Research, his company is known for the popular Mathematica software suite and Wolfram|Alpha knowledge engine. He did not initially discover cellular automata but recently he has been a prominent figure in its advocacy. He spent 10 years working on his book, A New Kind of Science. In the 1300 page tome, he discusses how cellular automata can be applied to every field of science from biology to physics. NKA is a detailed study of cellular automata programs.
+		</p>
+
+		<p>
+		Basic Cellular Automata
+		</p>
+
+		<p>
+		Figure: Wolfram's Elementary CA Rule 30. Look at 3 bit input and 1 bit output.
+
+		The diagram above depicts the rule 30 program (or rule 30 elementary cellular automaton). There are 8 input states (2 ^ 3) and an output state of one or zero. If you look at the diagram from left to right. The first sequence of blocks on the left depict an input state of { 1 1 1 } with an output of 0. Given input of cells { 1 1 1}, the output will be set to 0. Subsequently, the next set of blocks consist of an input state of { 1 1 0 } with an output of 0.
+
+		</p>
+
+		<p>
+			Applied Cellular Automata
+
+			Cellular automata is often used with data compression, cryptography, artificial intelligence, urban planning, financial market modeling, music generation, and 3D terrain generation. If you are a software engineer, you may have to step back and consider how cellular automata patterns emerge and understand the nature of the dynamic system before looking for a typical software library. CA is not normally seen in everyday applications. Consider this when you look at some random pattern, don't think of the phenomenon as a random sequence of events that cannot be replicated, think of the event in terms of a cellular automaton. Try to imagine the rules that could model that natural behavior. Modeling seemingly random patterns is an area where cellular automata is being widely used. Urban planning departments are integrating geographic information systems (GIS) with cellular automata in an attempt to predict growth in an area of a city.
+			
+			Summary
+			
+			The simple squaring example mentioned in this post merely gives you an overview of a basic cellular automata system. Scientists, biologists, computer scientists and software engineers want to find better ways to observe relationships and patterns that occur in our world. Review Stephen Wolfram's A New Kind of Science to give you an idea for what is possible with seemingly simple rules.
+		</p>
+
+
+		<h2>On Unit Testing</h2>
+
+		This is an older post but still relevant.
+		<a href="https://berlinbrowndev.blogspot.com/2017/04/on-unit-testing-java-tdd-for-developers.html">On Unit Testing</a>
+
+		<p>
+			I am more interested in the psychology of unit testing, who does it, likes it, hates it? It really is one of those easy to learn, hard to master concepts. For example, many many may play chess when they are young and can end up being horribly chess players most of their life, I am part of that majority. Unfortunately, I have never played chess and sat down for hours and tried to master it. I never see the common patterns or have a developed end game. I mostly just play with a knowledge of the basic rules. Following good unit testing practices within your software development shop is a lot like playing chess. It is easy to learn and difficult master. Actually, there are a lot of big differences, chess is a game, chess is not coding, and people take their software development very seriously. So if you don't master unit testing, but are able to complete your job tasks, some might argue that is an acceptable risk in the world of software development. And why master chess or master unit testing? If developers are fine without unit testing, then why even suggest it. Some developers just don't want to invest the energy to master the practice. And in some development shops, there is no hard requirement to do so.
+		</p>
+		<p>
+			I am not going to convince you to write unit tests with this one post, I will leave that up to software guru Martin Fowler and the people at ThoughtWorks who have written large tomes on the subject. But I will present my thoughts on why some developers won't write unit tests but why they should. Those developers and architects that do advocate unit testing generally fall into that category where they have written just enough unit tests to find it useful and they generally love the practice, they also encourage others to follow along. I am sort of in that camp, I have almost become religious about it. I can't imagine my real code without unit tests and I just feel guilty by only testing through manual functional testing.
+		</p>
+		<p>
+			Jeff Atwood of Coding Horror wrote a short blog post on the topic, "I Pity the Fool Who Doesn't Write Unit Tests". Here is the one blurb that stuck out for me, "Even if you only agree with a quarter of the items on that list-- and I'd say at least half of them are true in my experience-- that is a huge step forward for software developers". And this one, "It's more fun to code with them than without". That is the essence of this unit testing religion, we can't force it on developers and we can't force developers to write unit tests only a certain way. I and many others don't believe in the practice of 100% coverage. You will rarely get there anyway, depending on the project or company. Some will argue that you shouldn't break the rule on non-determinism and this is a big one. Basically, the unit test should return the same output every time you run the test. You should avoid breaking this rule for unit tests but you can still write and add automated integration tests to your suite and not waste time, combine a collection of unit tests and integration tests. A simple integration test might test connecting to your REST microservice and validating the HTTP status code. At that point, your test moves into the integration testing category. If you connect to the database, run a particular SQL statement and validate data model returned from the SQL invocation, then your test is basically integration. Both scenarios are not units are non-deterministic but I would still consider them to be useful. Also, as a start for new developers getting familiar with unit testing, writing integration tests may be more familiar to them than decomposing or refactoring their code for a real unit test. There is a benefit in database or HTTP integration tests, you can add them to a test suite and run them in a automated form after a code change and after a build. Even bad tests can be useful.
+		</p>
+		<p>
+			Misko Hevery is creator of one of the most popular JavaScript frameworks to emerge in the last couple of years. It is a Google project that he started working as an Agile Coach. As he puts it, he wants to maintain the high level of automated testing culture at Google. Most of his published articles are not about AngularJs but on the benefits of automated testing. I can only imagine that he developed the MVC JavaScript framework because the old crop of frameworks were a pain to work with for developers. They were not testable.
+		</p>
+
+		<h2>On Java and Java Virtual Machine Languages</h2>
+		<p>
+		The Java Virtual Machine ( Sun's JVM is called HotSpot ) is a java bytecode interpreter 
+		which is fast, portable and secure. Jython, JRuby, Scala, ABCL (Common Lisp) 
+		are popular language implementations that run on the JVM that allow for the 
+		jvmcookbook sugar of their particular languages.
+
+		<h3>Review of languages</h3>
+		
+		<ul>
+			<li><a href="https://www.jruby.org/">https://www.jruby.org/ - JRuby Home</li>
+			<li><a href="https://groovy-lang.org/">https://groovy-lang.org/</a>" - Groovy Home</li>
+			<li>https://clojure.org/ - Clojure</li>
+			<li>https://www.scala-lang.org/ - Scala is a general purpose programming language designed to express common programming patterns in a concise, elegant, and type-safe way. </li>
+			<li>https://www.jython.org - Jython</li>
+			<li>https://cliki.net/ABCL - Armed Bear Common Lisp (ABCL) is an implementation of ANSI Common Lisp that runs in a Java virtual machine. </li>			
+		</ul>
+		</p>
+
+		Images created with povray ray tracer
+
+		<a href="https://www.povray.org/">povray</a>
+		<!-- Add Content Above Main -->
  	</div> 
  	
- 	<p>
- 	</p>
+	
+ 	
  <br/>
  <img src="imgs/bottom_page.png" border="0" />
  </div>
